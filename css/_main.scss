@@ -1,0 +1,175 @@
+.screen {
+    // .screen__container
+    background-image: url(../img/backgroun_about.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+    &__container {
+        padding-top: rem(210);
+        padding-bottom: rem(150);
+    }
+    // .screen__title
+    &__title {
+        color: #ffffff;
+        font-size: rem(48);
+        font-weight: 500;
+        text-align: center;
+        line-height: 125%;
+        margin: 0 auto;
+        max-width: rem(690);
+    }
+}
+
+.about {
+    // .about__container
+    &__container {
+        padding-top: rem(70);
+        padding-bottom: rem(100);
+    }
+    // .about__paragraphs
+    &__paragraphs {
+        font-size: 20px;
+        line-height: 125%;
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+    }
+}
+
+.advantages {
+    // .advantages__container
+    background: #f9f9f9;
+    &__container {
+        padding-top: rem(70);
+        padding-bottom: rem(100);
+    }
+    // .advantages__box
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(35);
+        flex-wrap: wrap;
+    }
+    // .advantages__item
+    &__item {
+        max-width: rem(374);
+    }
+}
+
+.management {
+    // .management__container
+    &__container {
+        padding-top: rem(70);
+        padding-bottom: rem(100);
+    }
+    // .management__items
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(40);
+        flex-wrap: wrap;
+    }
+    // .management__item
+    &__item {
+    }
+}
+
+.item-management {
+    // .item-management__img
+    width: rem(265);
+    &__img {
+        position: relative;
+        border-radius: rem(10);
+        margin-bottom: rem(20);
+        filter: drop-shadow(10px 10px 15px #BABEC0) drop-shadow(-10px -10px 15px #FFFFFF);
+        & img {
+        border-radius: rem(10);
+        max-width: 100%;
+        }
+    }
+    // .item-management__name
+    &__name {
+        position: absolute;
+        bottom: 0px;
+        background: linear-gradient(270deg, #111111 0%, rgba(17, 17, 17, 0.1) 100%);
+        border-radius: 0px 0px 10px 10px;
+        text-align: right;
+        padding: rem(6) rem(20) rem(6) 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        color: #F0F0F0;
+    }
+    // .item-management__title
+    &__title {
+    }
+}
+
+
+/////////////////////SERVICES.HTML
+.services {
+    // .services__container
+    &__container {
+        padding-top: rem(70);
+        padding-bottom: rem(100);
+        display: flex;
+        justify-content: space-between;
+    }
+    // .services__buttons
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(25);
+        margin-right: rem(100);
+    }
+    // .services__button
+    &__button {
+        color: #616161;
+        background: #ECF0F3;
+        box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BABEC0;
+        border-radius: 35px;
+        width: rem(375);
+        height: rem(60);
+        padding: rem(6)rem(35);
+        transition: all .5s;
+        &:active {
+            background: linear-gradient(180deg, #D4D8DB 0%, #FDFFFF 100%);
+            box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BABEC0, inset 5px 5px 10px #BABEC0, inset -5px -5px 10px #FFFFFF;
+        }
+        &._activ {
+            color: #00A3FF;
+        }
+    }
+    // .services__description
+    &__description {
+    }
+    // .services__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(10);
+        display: none;
+        &._activ {
+            display: block;
+        }
+    }
+    // .services__paragraph
+    &__paragraph {
+    }
+    // .services__list
+    &__list {
+        & li {
+            position: relative;
+            padding-left: 10px;
+            &::before {
+                position: absolute;
+                content: "-";
+                left: 0px;
+            }
+        }
+    }
+}
+
+

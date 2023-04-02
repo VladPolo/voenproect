@@ -1,0 +1,74 @@
+.header {
+		// .header__container
+        position: absolute;
+        width: 100%;
+        color: #ffffff;
+		&__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: rem(25);
+            padding-bottom: rem(25);
+		}
+}
+.logo {
+    // .logo__img
+    display: flex;
+    align-items: center;
+    margin-right: rem(200);
+    &__img {
+        margin-right: rem(10);
+    }
+    // .logo__title
+    &__title {
+        font-family: "ZapfChanceryTT";
+        font-size: rem(24);
+        font-weight: 700;
+    }
+}
+
+.menu {
+		// .menu__list
+        font-weight: 500;
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(35);
+		}
+		// .menu__item
+		&__item {
+            position: relative;
+            transition: all .3s;
+            &::after {
+                content: "";
+                width: 0%;
+                position: absolute;
+                height: rem(2);
+                left: 0;
+                bottom: -10px;
+                transition: .4s linear;
+                border-radius: rem(2);
+            }
+            &:hover::after {
+                width: 100%;
+                background: #00A3FF;
+            }
+            &._activ {
+                color: #00A3FF;
+                &::after {
+                    content: "";
+                    width: 100%;
+                    position: absolute;
+                    height: rem(2);
+                    left: 0;
+                    bottom: -10px;
+                    transition: .4s linear;
+                    border-radius: rem(2);
+                    background: #00A3FF;
+                }
+            }
+            &:hover {
+                color: #00A3FF;
+            }
+		}
+}
